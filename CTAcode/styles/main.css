@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    font-family: "Work Sans";
+    margin: 0;
+}
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    background-color: #00FF96;
+}
+.header-logo {
+    text-align: center;
+    padding: 10px;
+}
+.header-logo h1 {
+    font-size: 4em;
+}
+.header-navbar {
+    background-color: rgb(147, 147, 147);
+}
+.header-navbar-list {
+    padding: 0;
+    display: flex;
+}
+.header-navbar-list-item {
+    padding: 12px;
+    transition: all 0.75s;
+}
+.header-navbar-list-item a {
+    text-decoration: none;
+    color: black;
+}
+.header-navbar-list-item:hover {
+    background-color: #00b168;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    background-color: rgb(61, 61, 61);
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 25px auto;
+    color: white;
+}
+.container-wallet {
+    background-color: black;
+    margin: 10px;
+}
