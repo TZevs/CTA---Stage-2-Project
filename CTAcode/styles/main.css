@@ -30,6 +30,9 @@ header {
     padding: 12px;
     transition: all 0.75s;
 }
+.item-active {
+    background-color: rgb(255, 115, 64);
+}
 .header-navbar-list-item a {
     text-decoration: none;
     color: black;
