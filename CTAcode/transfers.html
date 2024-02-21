@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/683ed5d49e.js" crossorigin="anonymous"></script>
     <title>Home and Wallets</title>
 </head>
@@ -22,8 +23,30 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <h2>Transactions</h2>
+        <div class="container transfer-container">
+            <div class="transfer-tabs">
+                <button class="transfer-tab-links" onclick="openTransfers(event, 'from-bank')">From Bank</button>
+                <button class="transfer-tab-links" onclick="openTransfers(event, 'wallet-transfers')">Wallet Transfers</button>
+                <button class="transfer-tab-links" onclick="openTransfers(event, 'create-wallet')">Create Wallet</button>
+            </div>
+            <div id="from-bank" class="transfer-tab-content">
+                <h2>Transaction</h2>
+            </div>
+            <div id="wallet-transfers" class="transfer-tab-content">
+                <h2>Transaction</h2>
+            </div>
+            <div id="create-wallet" class="transfer-tab-content">
+                <form action="" method="" class="form wallet-form">
+                    <h2>Create Wallet</h2>
+                    <div class="wallet-form-input">
+                        <label for="currency">Currency: </label>
+                        <select name="currency" id="currency">
+                            <option value="">--Please Select a Currency--</option>
+                            <option value="euro">Euro</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </body>
