@@ -50,7 +50,7 @@
                 </div>
                 <div class="register-form-btn">
                     <input type="submit" value="Register">
-                    <a href="login.html">Back</a>
+                    <a href="login.php">Back</a>
                 </div>
             </form>
         </div>

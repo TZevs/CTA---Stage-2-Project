@@ -1,3 +1,8 @@
+<?php
+    require_once("includes/db_conn.php");
+    $query = "SELECT * FROM CustomerAccounts";
+    $result = $mysqli->query($query);
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,10 +19,10 @@
         </div>
         <nav class="header-navbar">
             <ul class="header-navbar-list">
-                <li class="header-navbar-list-item"><a href="home.html">Wallets</a></li>
-                <li class="header-navbar-list-item"><a href="exchangeRate.html">Exchange Rates</a></li>
-                <li class="header-navbar-list-item"><a href="transfers.html">Transfers</a></li>
-                <li class="header-navbar-list-item item-active"><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="header-navbar-list-item"><a href="home.php">Wallets</a></li>
+                <li class="header-navbar-list-item"><a href="exchangeRate.php">Exchange Rates</a></li>
+                <li class="header-navbar-list-item"><a href="transfers.php">Transfers</a></li>
+                <li class="header-navbar-list-item item-active"><a href="profile.php"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -26,6 +31,11 @@
             <form action="" method="" class="form profile-form">
                 <h2><i class="fa-regular fa-user"></i></h2>
                 <h3>Account Profile</h3>
+                <?php
+                    while ($row = $result->fetch_assoc()) {
+                        echo $row["first_name"];
+                    } 
+                ?>
                 <div class="profile-form-input">
                     <label for="firstName">First Name: </label>
                     <input type="text" name="firstName" id="firstName" value="" required />
