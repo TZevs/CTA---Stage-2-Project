@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "CTADatabase";
+    $dbname = "cta_schema";
 
     // Connection creation
     $conn = new mysqli($servername, $username, $password, $dbname);

@@ -1,8 +1,4 @@
-<?php
-    require_once("includes/db_conn.php");
-    $query = "SELECT * FROM CustomerAccounts";
-    $result = $mysqli->query($query);
-?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,11 +27,6 @@
             <form action="" method="" class="form profile-form">
                 <h2><i class="fa-regular fa-user"></i></h2>
                 <h3>Account Profile</h3>
-                <?php
-                    while ($row = $result->fetch_assoc()) {
-                        echo $row["first_name"];
-                    } 
-                ?>
                 <div class="profile-form-input">
                     <label for="firstName">First Name: </label>
                     <input type="text" name="firstName" id="firstName" value="" required />
