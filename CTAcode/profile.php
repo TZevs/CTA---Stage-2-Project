@@ -1,4 +1,6 @@
-
+<?php
+    require_once("includes/db_conn.php");
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,34 +30,45 @@
                 <h2><i class="fa-regular fa-user"></i></h2>
                 <h3>Account Profile</h3>
                 <div class="profile-form-input">
-                    <label for="firstName">First Name: </label>
-                    <input type="text" name="firstName" id="firstName" value="" required />
-
-                    <label for="middleName">Middle Name: </label>
-                    <input type="text" name="middleName" id="middleName" value="" />
-
-                    <label for="lastName">Surname: </label>
-                    <input type="text" name="lastName" id="lastName" value="" required />
-
-                    <label for="email">Email Address: </label>
-                    <input type="email" name="email" id="email" value="" required />
-
-                    <label for="dob">Date of Birth: </label>
-                    <input type="text" name="dob" id="dob" value="" required />
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="firstName" id="firstName" value="" required />
+                    </div>
+                    <div>
+                        <label for="middleName">Middle Name: </label>
+                        <input type="text" name="middleName" id="middleName" value="" />
+                    </div>
+                    <div>
+                        <label for="lastName">Surname: </label>
+                        <input type="text" name="lastName" id="lastName" value="" required />
+                    </div>
+                    <div>
+                        <label for="email">Email Address: </label>
+                        <input type="email" name="email" id="email" value="" required />
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth: </label>
+                        <input type="text" name="dob" id="dob" value="" required />
+                    </div>
                 </div>
                 <div class="profile-form-input">
                     <h3>Home Address</h3>
-                    <label for="houseNum">House Number: </label>
-                    <input type="text" name="houseNum" id="HouseNum" value="" required />
-
-                    <label for="streetName">Street Name: </label>
-                    <input type="text" name="streetName" id="streetName" value="" required />
-
-                    <label for="city">City: </label>
-                    <input type="text" name="city" id="city" value="" required />
-
-                    <label for="postcode">Postcode: </label>
-                    <input type="text" name="postcode" id="postcode" value="" required />
+                    <div>
+                        <label for="houseNum">House Number: </label>
+                        <input type="text" name="houseNum" id="HouseNum" value="" required />
+                    </div>
+                    <div>
+                        <label for="streetName">Street Name: </label>
+                        <input type="text" name="streetName" id="streetName" value="" required />
+                    </div>
+                    <div>
+                        <label for="city">City: </label>
+                        <input type="text" name="city" id="city" value="" required />
+                    </div>
+                    <div>
+                        <label for="postcode">Postcode: </label>
+                        <input type="text" name="postcode" id="postcode" value="" required />
+                    </div>
                 </div>
                 <div class="profile-form-btn">
                     <input type="submit" value="Update">

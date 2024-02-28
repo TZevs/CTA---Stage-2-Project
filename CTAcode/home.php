@@ -19,6 +19,8 @@
                 <li class="header-navbar-list-item"><a href="exchangeRate.php">Exchange Rates</a></li>
                 <li class="header-navbar-list-item"><a href="transfers.php">Transfers</a></li>
                 <li class="header-navbar-list-item"><a href="profile.php"><i class="fa-solid fa-user"></i></a></li>
+                <li class="header-navbar-list-item"><a href="register.php">Register</a></li>
+                <li class="header-navbar-list-item"><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </header>

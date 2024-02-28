@@ -55,14 +55,6 @@ header {
     margin: 25px auto;
     color: white;
 }
-.container-wallet {
-    background-color: black;
-    margin: 10px;
-}
-.login-container, .register-container, .profile-container{
-    text-align: center;
-    font-size: 1.5rem;
-}
 
 /* Tabs */
 .transfer-tabs {

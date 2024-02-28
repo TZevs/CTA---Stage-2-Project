@@ -19,34 +19,45 @@
             <form action="" method="" class="form register-form">
                 <h2>Register</h2>
                 <div class="register-form-input">
-                    <label for="firstName">First Name: </label>
-                    <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required />
-
-                    <label for="middleName">Middle Name: </label>
-                    <input type="text" name="middleName" id="middleName" placeholder="Enter Your Middle Name" />
-
-                    <label for="lastName">Surname: </label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Enter Your Surname" required />
-
-                    <label for="email">Email Address: </label>
-                    <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
-                    
-                    <label for="dob">Date of Birth: </label>
-                    <input type="date" name="dob" id="dob" required />
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter Your First Name" required />
+                    </div>
+                    <div>
+                        <label for="middleName">Middle Name: </label>
+                        <input type="text" name="middleName" id="middleName" placeholder="Enter Your Middle Name" />
+                    </div>
+                    <div>
+                        <label for="lastName">Surname: </label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter Your Surname" required />
+                    </div>
+                    <div>
+                        <label for="email">Email Address: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth: </label>
+                        <input type="date" name="dob" id="dob" required />
+                    </div>
                 </div>
                 <div class="register-form-input">
                     <h3>Home Address</h3>
-                    <label for="houseNum">House Number: </label>
-                    <input type="text" name="houseNum" id="HouseNum" placeholder="Enter Your House Number" required />
-
-                    <label for="streetName">Street Name: </label>
-                    <input type="text" name="streetName" id="streetName" placeholder="Enter Your Street Name" required />
-
-                    <label for="city">City: </label>
-                    <input type="text" name="city" id="city" placeholder="Enter Your City" required />
-
-                    <label for="postcode">Postcode: </label>
-                    <input type="text" name="postcode" id="postcode" placeholder="Enter Your Postcode" required />
+                    <div>
+                        <label for="houseNum">House Number: </label>
+                        <input type="text" name="houseNum" id="HouseNum" placeholder="Enter Your House Number" required />
+                    </div>
+                    <div>
+                        <label for="streetName">Street Name: </label>
+                        <input type="text" name="streetName" id="streetName" placeholder="Enter Your Street Name" required />
+                    </div>
+                    <div>
+                        <label for="city">City: </label>
+                        <input type="text" name="city" id="city" placeholder="Enter Your City" required />
+                    </div>
+                    <div>
+                        <label for="postcode">Postcode: </label>
+                        <input type="text" name="postcode" id="postcode" placeholder="Enter Your Postcode" required />
+                    </div>
                 </div>
                 <div class="register-form-btn">
                     <input type="submit" value="Register">

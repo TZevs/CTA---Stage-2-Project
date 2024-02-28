@@ -16,17 +16,21 @@
     </header>
     <main>
         <div class="container login-container">
-            <form action="" method="" class="form login-form">
+            <form method="post" class="form login-form">
                 <h2>Login</h2>
                 <div class="login-form-input">
-                    <label for="username">Username: </label>
-                    <input type="text" name="username" id="username" placeholder="Enter Your Username" value="" />
-
-                    <label for="password">Password: </label>
-                    <input type="password" name="password" id="password" placeholder="Enter Your Password" value="" />
-                    
-                    <input type="checkbox" name="remember" id="remember" value="1" />
-                    <label for="remember">Remember Me</label>
+                    <div>
+                        <label for="username">Username: </label>
+                        <input type="text" name="username" id="username" placeholder="Enter Your Username" value="" />
+                    </div>
+                    <div>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password" placeholder="Enter Your Password" value="" />
+                    </div>
+                    <div>
+                        <input type="checkbox" name="remember" id="remember" value="1" />
+                        <label for="remember">Remember Me</label>
+                    </div>
                 </div>
                 <div class="login-form-btn">
                     <input type="submit" value="Login" />
