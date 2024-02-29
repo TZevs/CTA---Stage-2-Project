@@ -1,3 +1,8 @@
+<?php
+    require_once("includes/db_conn.php");
+    $exchn = "SELECT * "
+    // exchange rates - add more to the table.
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -35,15 +40,20 @@
             <div id="wallet-transfers" class="transfer-tab-content">
                 <h2>Transaction</h2>
             </div>
-            <div id="create-wallet" class="transfer-tab-content">
+            <div id="create-wallet" class="transfer-tab-content"> 
                 <form action="" method="" class="form wallet-form">
                     <h2>Create Wallet</h2>
                     <div class="wallet-form-input">
-                        <label for="currency">Currency: </label>
-                        <select name="currency" id="currency">
-                            <option value="">--Please Select a Currency--</option>
-                            <option value="euro">Euro</option>
-                        </select>
+                        <div>
+                            <label for="currency">Currency: </label>
+                            <select name="currency" id="currency">
+                                <option value="">--Please Select a Currency--</option>
+                                <option value="euro">Euro</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <label for="new-wallet-amount">Amount: </label>
+                        </div>
                     </div>
                 </form>
             </div>

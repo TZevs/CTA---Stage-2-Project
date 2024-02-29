@@ -1,3 +1,8 @@
+<?php
+    require_once("includes/db_conn.php");
+    $user_details = "SELECT username, passwords FROM users";
+    $result_details = $mysqli->($user_details);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +21,7 @@
     </header>
     <main>
         <div class="container login-container">
-            <form method="post" class="form login-form">
+            <form method="POST" class="form login-form">
                 <h2>Login</h2>
                 <div class="login-form-input">
                     <div>
