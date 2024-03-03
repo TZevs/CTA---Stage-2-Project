@@ -1,3 +1,9 @@
+<?php
+    require_once("includes/db_conn.php");
+    $rates = "SELECT * FROM currencies";
+    $rate_results = $mysqli->query($rates);
+    // Add more data to the currency table. - Probably done manually.
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,6 +31,24 @@
     <main>
         <div class="container">
             <h2>Exchange Rates</h2>
+            <table class="exchange-table">
+                <tr class="exchange-table-headers">
+                    <th>Currency Name</th>
+                    <th>Exchange Rate</th>
+                    <th>Highest</th>
+                    <th>Lowest</th>
+                </tr>
+                <?php
+                    while ($obj = $rate_results->fetch_object()) {
+                       echo "<tr class=\"exchange-table-content\">";
+                        echo "<td>{$obj->shorthand}</td>";
+                        echo "<td>{$obj->exchange_rate}<td>";
+                        echo "<td>{$obj->highest_yr_rate}<td>";
+                        echo "<td>{$obj->lowest_yr_rate}<td>";
+                       echo "</tr>"; 
+                    }
+                ?>
+            </table>
         </div>
     </main>
 </body>
