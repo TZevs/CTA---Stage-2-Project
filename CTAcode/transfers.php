@@ -1,7 +1,7 @@
 <?php
     require_once("includes/db_conn.php");
-    $exchn = "SELECT * "
-    // exchange rates - add more to the table.
+    $exchange = "SELECT * FROM currencies";
+    $exchange_result = $mysqli->query($exchange);
 ?>
 <html lang="en">
 <head>
@@ -47,8 +47,12 @@
                         <div>
                             <label for="currency">Currency: </label>
                             <select name="currency" id="currency">
-                                <option value="">--Please Select a Currency--</option>
-                                <option value="euro">Euro</option>
+                                <option>--Please Select a Currency--</option>
+                                <?php
+                                while ($obj = $exchange_result->fetch_object()) {
+                                    echo "<option>{$obj->shorthand} : {$obj->currency_name} : {$obj->currency_sign}</option>";
+                                }
+                                ?>
                             </select>
                         </div> 
                         <div>

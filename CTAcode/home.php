@@ -1,3 +1,11 @@
+<?php
+    require_once("includes/db_conn.php");
+    $wallets = "SELECT * FROM currencywallets";
+    $wallet_result = $mysqli->query($wallets);
+    // Inner join the wallet currency id to the currency table id so i can get the currency info theough the id in wallet table.
+    // Change the table structure - to idnetify the wallet to the customer. 
+    // Remove the link table.
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +35,14 @@
     <main>
         <div class="container">
             <h2>Currency Wallets</h2>
-            <div class="container-wallet">
-                
-            </div>
+                <?php
+                    while ($obj = $wallet_result->fetch_object()) {
+                        echo "<div class=\"container-wallet\">";
+                        echo "<h3>Currency Name</h3>";
+                        echo "<h4>Amount: {}</h4>";
+                        echo "</div>";
+                    }
+                ?>
         </div>
     </main>
 </body>

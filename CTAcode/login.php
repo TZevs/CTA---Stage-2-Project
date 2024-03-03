@@ -1,7 +1,7 @@
 <?php
     require_once("includes/db_conn.php");
     $user_details = "SELECT username, passwords FROM users";
-    $result_details = $mysqli->($user_details);
+    $result_details = $mysqli->query($user_details);
 ?>
 <!DOCTYPE html>
 <html lang="en">
