@@ -1,7 +1,10 @@
 <?php
-    require_once("includes/db_conn.php");
-    $user_details = "SELECT username, passwords FROM users";
-    $result_details = $mysqli->query($user_details);
+
+
+    if ( !isset($_POST['username'], $_POST['password']) ) {
+        exit('Please fill both username and password fields!');
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

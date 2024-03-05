@@ -3,8 +3,7 @@
     $wallets = "SELECT * FROM currencywallets";
     $wallet_result = $mysqli->query($wallets);
     // Inner join the wallet currency id to the currency table id so i can get the currency info theough the id in wallet table.
-    // Change the table structure - to idnetify the wallet to the customer. 
-    // Remove the link table.
+    // Update PHPADMIN db so that it matches updates in sqlite.
 ?>
 <!DOCTYPE html>
 <html lang="en">
