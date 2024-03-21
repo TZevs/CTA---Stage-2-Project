@@ -1,5 +1,5 @@
 <?php
-
+    include_once("includes/db_conn.php");
 
     if ( !isset($_POST['username'], $_POST['password']) ) {
         exit('Please fill both username and password fields!');
